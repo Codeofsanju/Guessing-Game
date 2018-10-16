@@ -86,20 +86,17 @@ input:focus::-webkit-input-placeholder {
     top:100px;
     left:13px;
 }
-.github{
+.social{
     background-color: transparent;
     border: transparent;
     border-radius: 9999em;
     margin-top: 0;
 }
 
-.button:hover, .button1:hover, .button2:hover, .github:hover{
+.button:hover, .button1:hover, .button2:hover, .github:hover, .social:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     cursor: pointer;
 }
-
-
-
 
 .header{
     position: absolute;
@@ -113,6 +110,12 @@ input:focus::-webkit-input-placeholder {
 
 }
 
+.links{
+    display: inline-block;
+}
+
+
+
 .footer{
     position: absolute;
     height: 100px;
@@ -122,3 +125,4 @@ input:focus::-webkit-input-placeholder {
     background: linear-gradient(21deg, #10abff, #1beabd);
 
 }
+

@@ -65,7 +65,7 @@ input:focus::-webkit-input-placeholder {
     opacity: 0;
 }
 .button, .button1, .button2{
-    transition-duration: 0.4s;
+    transition-duration: 0.7s;
     background: linear-gradient(90deg, #10abff, #1beabd);
     border: transparent;
     height: 60px;

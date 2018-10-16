@@ -95,6 +95,7 @@ input:hover{
     left:13px;
 }
 .social{
+    transition-duration: 0.7s;
     background-color: transparent;
     border: transparent;
     border-radius: 9999em;

@@ -26,4 +26,20 @@ class Game{
         this.playersGuess = null;
         this.pastGuesses = [];
     }
+    difference(){
+        return Math.abs(this.playersGuess-this.winningNumber);
+    }
+    isLower(){
+        return this.playersGuess < this.winningNumber ? true:false;
+    }
+    playersGuessSubmission(num){
+        if(num > 100 || num < 1 || typeof(num) !== 'number'){
+            throw 'That is an invalid guess.';
+        }
+        this.playersGuess = num;
+        return this.checkGuess();
+    }
+    checkGuess(){
+
+    }
 }

@@ -4,10 +4,13 @@ by running "testem".
 In this file, you will also include the event listeners that are needed to interact with your HTML file when
 a user clicks a button or adds a guess to the input field.
 */
+
+//returns a random number between 1 and 100
 const generateWinningNumber = () =>{
     return Math.floor(Math.random() * (100 - 0) + 1);
 }
 
+//fisher-yates Shuffle algorithm
 const shuffle = (arr) =>{
     let i = arr.length-1;
     while(i){
@@ -65,3 +68,10 @@ class Game{
         }
     }
 }
+
+
+// Returns an empty, new game instance
+const newGame = () =>{
+    return new Game;
+}
+

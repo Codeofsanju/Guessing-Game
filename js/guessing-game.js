@@ -30,7 +30,7 @@ class Game{
         return Math.abs(this.playersGuess-this.winningNumber);
     }
     isLower(){
-        return this.playersGuess < this.winningNumber ? true:false;
+        return this.playersGuess < this.winningNumber;
     }
     playersGuessSubmission(num){
         if(num > 100 || num < 1 || typeof(num) !== 'number'){

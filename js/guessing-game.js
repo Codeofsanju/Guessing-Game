@@ -40,6 +40,28 @@ class Game{
         return this.checkGuess();
     }
     checkGuess(){
-
+        if(this.playersGuess === this.winningNumber){
+            return "You Win!";
+        }
+        else if(this.pastGuesses.includes(this.playersGuess)){
+            return "You have already guessed that number.";
+        }
+        else{
+            const diff = Math.abs(this.winningNumber - this.playersGuess);
+            this.pastGuesses.push(this.playersGuess);
+            if(this.pastGuesses.length === 5){
+                return "You Lose.";
+            }
+            else if(diff < 10){
+                return "You\'re burning up!";
+            }
+            else if(diff >=10 && diff < 25){
+                return "You\'re lukewarm.";
+            }
+            else if(diff >=25 && diff < 50){
+                return "You\'re a bit chilly.";
+            }
+            return "You\'re ice cold!";
+        }
     }
 }

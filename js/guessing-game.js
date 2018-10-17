@@ -6,12 +6,12 @@ a user clicks a button or adds a guess to the input field.
 */
 
 //returns a random number between 1 and 100
-const generateWinningNumber = () =>{
+function generateWinningNumber(){
     return Math.floor(Math.random() * (100 - 0) + 1);
 }
 
 //fisher-yates Shuffle algorithm
-const shuffle = (arr) =>{
+function shuffle(arr){
     let i = arr.length-1;
     while(i){
         let randomIndex = Math.floor(Math.random() * (arr.length - 0));
@@ -67,11 +67,18 @@ class Game{
             return "You\'re ice cold!";
         }
     }
+    provideHint(){
+        let hintArr = [];
+        hintArr.push(this.winningNumber);
+        for(let i=0; i<2; i++){
+            hintArr.push(generateWinningNumber());
+        } 
+        return shuffle(hintArr);
+    }
 }
 
 
 // Returns an empty, new game instance
-const newGame = () =>{
+function newGame(){
     return new Game;
 }
-

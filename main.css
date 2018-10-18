@@ -128,6 +128,7 @@ img{
     position: absolute;
     font-family: 'Charmonman', cursive;
     font-weight: bold;
+    font-size: 15px;
     color: white;
     height: 15%;
     width: 100%;
@@ -146,5 +147,6 @@ img{
     bottom: 0;
     color: black;
     background: linear-gradient(to top, #2980b9, #f3f9a7); 
+    font-size: 15px;
 }
 

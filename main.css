@@ -18,18 +18,21 @@
     background: radial-gradient(circle, #f3f9a7, #cac531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin: 0 auto;
     border-radius: 9999em;
+    align-content: 0 auto;
+
+
 }
 #subtitle{
     background: radial-gradient(circle, #fffc00, #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Charmonman', cursive;
     font-weight: bold;
-    font-size: 20px;
-    margin-top: 90px;
+    font-size:calc(5.5px + 1.23vw);
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 9999em;
     color: black;
-    width: 400px;
+    width: 30vw;
 }
 
 
@@ -37,24 +40,27 @@
 
 .input {
 	position:relative;
-    width: 200px;
-    height: 200px;
+    width: 15vw;
+    height: 15vw;
     background: radial-gradient(circle, #fffc00, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	margin: 0 auto;
 	display: block;
     border-radius: 9999em;
     text-align: center;
     margin-top: 10px;
+    min-width: 150px;
+    min-height: 150px;
 }
 input{
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     background-color: transparent;
     border-color: transparent;
-    height: 60px;
-    width: 175px;
+    height: 4vw;
+    width: 9vw;
     font-family: 'Charmonman', cursive;    ;
-    font-size: 50px;
-    margin-top: 65px;
+    /* font-size: 3vw; */
+    font-size:calc(15px + 1.20vw);
+    margin-top: 37%;
     color: black;
     text-align: center;
     border-radius: 9999em;
@@ -75,18 +81,18 @@ input:hover{
 
 
 .button, .button1, .button2{
-    transition-duration: 0.7s;
+    transition-duration: 0.4s;
     background: radial-gradient(circle, #fffc00,  #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     border: transparent;
-    min-width: 60px;
-    min-height: 60px;
-    height: auto;
-    width: auto;
+    min-width: 50px;
+    min-height: 50px;
+    height: 4.3vw;
+    width: 4.3vw;
     margin-top: 20px;
     font-family: 'Charmonman', cursive; 
     font-weight: bold;
-    font-size: 18px;
+    font-size:calc(5.5px + 1.23vw);
     border-radius: 9999em;
     color: black;
     outline: none;
@@ -116,11 +122,11 @@ input:hover{
     background-color: transparent;
     border: transparent;
     border-radius: 9999em;
-    margin-top: 0;
+    margin-top: 5%;
 }
 img{
-    width: 30px;
-    height: 30px;
+    width: 4vh;
+    height: 4vh;
 }
 
 
@@ -147,6 +153,7 @@ img{
     bottom: 0;
     color: black;
     background: linear-gradient(to top, #2980b9, #f3f9a7); 
-    font-size: 15px;
+    font-size: 2vh;
+
 }
 

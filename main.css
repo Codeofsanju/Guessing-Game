@@ -14,20 +14,21 @@
     width: 100%;
     top: 100px;
     bottom: 100px;
-    background: linear-gradient(90deg, #10abff, #1beabd);
+    background: radial-gradient(circle, #f3f9a7, #cac531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     margin: 0 auto;
     border-radius: 9999em;
 
 }
 #subtitle{
-    background: linear-gradient(21deg, #10abff, #1beabd);
+    background: radial-gradient(circle, #fffc00, #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: cursive;
     font-size: 20px;
     margin-top: 90px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 9999em;
-    color: white;
+    color: black;
     width: 400px;
 }
 
@@ -38,7 +39,7 @@
 	position:relative;
     width: 200px;
     height: 200px;
-	background: linear-gradient(90deg, #10abff, #1beabd);
+    background: radial-gradient(circle, #fffc00, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	margin: 0 auto;
 	display: block;
     border-radius: 9999em;
@@ -54,7 +55,7 @@ input{
     font-family: cursive;
     font-size: 60px;
     margin-top: 65px;
-    color: white;
+    color: black;
     text-align: center;
     border-radius: 9999em;
     outline: none;
@@ -62,7 +63,7 @@ input{
 }
 ::-webkit-input-placeholder { 
     text-align: center;
-    color:white;
+    color: black;
 }
 input:focus::-webkit-input-placeholder {
     transition-duration: 0.5s;
@@ -73,7 +74,8 @@ input:hover{
 }
 .button, .button1, .button2{
     transition-duration: 0.7s;
-    background: linear-gradient(90deg, #10abff, #1beabd);
+    background: radial-gradient(circle, #fffc00,  #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     border: transparent;
     height: 60px;
     width: 60px;
@@ -81,18 +83,22 @@ input:hover{
     font-family: cursive;
     font-size: 20px;
     border-radius: 9999em;
-    color: white;
+    color: black;
     outline: none;
 }
 .button1{
     position: absolute;
     top:100px;
     right:13px;
+    background: linear-gradient(225deg, #6dd5fa, #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .button2{
     position: absolute;
     top:100px;
     left:13px;
+    background: linear-gradient(135deg, #6dd5fa, #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .social{
     transition-duration: 0.7s;
@@ -117,7 +123,7 @@ img{
     color: white;
     height: 100px;
     width: 100%;
-	background: linear-gradient(21deg, #10abff, #1beabd);
+    background: linear-gradient(to bottom, #2980b9, #f3f9a7); 
     text-align: center;
     top: 0;
 
@@ -134,8 +140,7 @@ img{
     height: 100px;
     width: 100%;
     bottom: 0;
-    color: white;
-    background: linear-gradient(21deg, #10abff, #1beabd);
-
+    color: black;
+    background: linear-gradient(to top, #2980b9, #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 

@@ -26,13 +26,14 @@
     background: radial-gradient(circle, #fffc00, #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Charmonman', cursive;
     font-weight: bold;
-    font-size:calc(5.5px + 1.23vw);
+    font-size:calc(5.5px + 1.20vw);
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 9999em;
     color: black;
     width: 30vw;
+    min-width: 35%;
 }
 
 
@@ -57,10 +58,11 @@ input{
     border-color: transparent;
     height: 4vw;
     width: 9vw;
+    min-width: 50%;
     font-family: 'Charmonman', cursive;    ;
     /* font-size: 3vw; */
     font-size:calc(15px + 1.20vw);
-    margin-top: 37%;
+    margin-top: 34%;
     color: black;
     text-align: center;
     border-radius: 9999em;

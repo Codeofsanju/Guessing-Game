@@ -141,6 +141,6 @@ img{
     width: 100%;
     bottom: 0;
     color: black;
-    background: linear-gradient(to top, #2980b9, #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to top, #2980b9, #f3f9a7); 
 }
 

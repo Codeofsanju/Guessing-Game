@@ -20,7 +20,7 @@
 }
 #subtitle{
     background: radial-gradient(circle, #fffc00, #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-family: cursive;
+    font-family: Cursive;
     font-size: 20px;
     margin-top: 90px;
     margin-left: auto;
@@ -50,7 +50,7 @@ input{
     border-color: transparent;
     height: 60px;
     width: 175px;
-    font-family: cursive;
+    font-family: Cursive;
     font-size: 60px;
     margin-top: 65px;
     color: black;
@@ -80,7 +80,7 @@ input:hover{
     height: 60px;
     width: 60px;
     margin-top: 20px;
-    font-family: cursive;
+    font-family: Cursive;
     font-size: 20px;
     border-radius: 9999em;
     color: black;
@@ -121,7 +121,7 @@ img{
 
 .header{
     position: absolute;
-    font-family: cursive;
+    font-family: Cursive;
     color: white;
     height: 100px;
     width: 100%;

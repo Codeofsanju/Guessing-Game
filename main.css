@@ -6,7 +6,7 @@
     height: 100%;
     position: absolute;
     margin: 0 auto;
-    background-color: whitesmoke;
+    background-color: #494a6b;
 }
 
 #game-box{
@@ -16,14 +16,15 @@
     top: 15%;
     bottom: 100px;
     background: radial-gradient(circle, #f3f9a7, #cac531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #98878f;
     margin: 0 auto;
     border-radius: 9999em;
     align-content: 0 auto;
-
-
 }
+
+
 #subtitle{
-    background: radial-gradient(circle, #fffc00, #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: radial-gradient(circle, #985e6d, #98878f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Charmonman', cursive;
     font-weight: bold;
     font-size:calc(5.5px + 1.20vw);
@@ -31,7 +32,7 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 9999em;
-    color: black;
+    color: white;
     width: 30vw;
     min-width: 35%;
 }
@@ -43,7 +44,7 @@
 	position:relative;
     width: 15vw;
     height: 15vw;
-    background: radial-gradient(circle, #fffc00, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: radial-gradient(circle, #985e6d, #98878f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	margin: 0 auto;
 	display: block;
     border-radius: 9999em;
@@ -60,10 +61,9 @@ input{
     width: 9vw;
     min-width: 50%;
     font-family: 'Charmonman', cursive;    ;
-    /* font-size: 3vw; */
     font-size:calc(15px + 1.20vw);
     margin-top: 34%;
-    color: black;
+    color: white;
     text-align: center;
     border-radius: 9999em;
     outline: none;
@@ -71,7 +71,7 @@ input{
 }
 ::-webkit-input-placeholder { 
     text-align: center;
-    color: black;
+    color: white;
 }
 input:focus::-webkit-input-placeholder {
     transition-duration: 0.5s;
@@ -84,33 +84,30 @@ input:hover{
 
 .button, .button1, .button2{
     transition-duration: 0.4s;
-    background: radial-gradient(circle, #fffc00,  #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: radial-gradient(circle, #985e6d, #98878f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: transparent;
     min-width: 50px;
     min-height: 50px;
-    height: 4.3vw;
-    width: 4.3vw;
+    height: 4.5vw;
+    width: 4.5vw;
     margin-top: 20px;
     font-family: 'Charmonman', cursive; 
     font-weight: bold;
     font-size:calc(5.5px + 1.23vw);
     border-radius: 9999em;
-    color: black;
+    color: white;
     outline: none;
 }
 .button1{
     position: absolute;
     top:14%;
     right:1%;
-    background: linear-gradient(225deg, #6dd5fa, #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .button2{
     position: absolute;
     top:14%;
     left:1%;
-    background: linear-gradient(135deg, #6dd5fa, #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 .button:hover, .button1:hover, .button2:hover, .github:hover, .social:hover{
@@ -130,7 +127,10 @@ img{
     width: 4vh;
     height: 4vh;
 }
-
+#linkedIn{
+    width: 4vh;
+    height: 3.5vh;
+}
 
 .header{
     position: absolute;
@@ -140,7 +140,7 @@ img{
     color: white;
     height: 15%;
     width: 100%;
-    background: linear-gradient(to bottom, #2980b9, #f3f9a7); 
+    background: #494a6b;
     text-align: center;
     top: 0;
 
@@ -153,8 +153,8 @@ img{
     height: 15%;
     width: 100%;
     bottom: 0;
-    color: black;
-    background: linear-gradient(to top, #2980b9, #f3f9a7); 
+    color: white;
+    background: #494a6b;
     font-size: 2vh;
 
 }

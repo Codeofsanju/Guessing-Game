@@ -80,5 +80,15 @@ class Game{
 
 // Returns an empty, new game instance
 function newGame(){
-    return new Game;
+    return new Game();
+}
+
+const guess = document.getElementById('Input');
+const pastGuessArray = document.getElementById('arr');
+const hintButton = document.getElementById('Hint');
+const resetButton  = document.getElementById('Reset');
+const guessButton  = document.getElementById('Guess');
+
+function play(){
+    const game = newGame();
 }

@@ -23,7 +23,7 @@
 }
 
 
-#subtitle{
+.subtitle, .array{
     background: radial-gradient(circle, #985e6d, #98878f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Charmonman', cursive;
     font-weight: bold;
@@ -37,6 +37,9 @@
     min-width: 35%;
 }
 
+.array{
+    margin-top: 3px;
+}
 
 
 

@@ -83,7 +83,6 @@ function newGame(){
     return new Game();
 }
 
-const guess = document.getElementById('Input');
 const pastGuessArray = document.getElementById('arr');
 const hintButton = document.getElementById('Hint');
 const resetButton  = document.getElementById('Reset');
@@ -91,4 +90,18 @@ const guessButton  = document.getElementById('Guess');
 
 function play(){
     const game = newGame();
+    guessButton.addEventListener('click', function(){
+        const guess = document.querySelector('Input');
+        alert(guess.value);
+        game.playersGuessSubmission(guess.value);
+    })
+
+    hintButton.addEventListener('click', function(){
+        alert(game.provideHint());
+    })
+
+    resetButton.addEventListener('click', function(){
+        alert('reset');
+    })
 }
+play();

@@ -44,29 +44,28 @@ class Game{
         return this.checkGuess(num);
     }
     checkGuess(){
+        let ret = '';
         if(this.playersGuess === this.winningNumber){
-            return "You Win!";
+            ret =  "You Win!";
         }
-        else if(this.pastGuesses.includes(this.playersGuess)){
-            return "You have already guessed that number.";
+        if(this.pastGuesses.includes(this.playersGuess)){
+            ret =  "You have already guessed that number.";
         }
         else{
             let diff = this.difference();
-            this.pastGuesses.push(this.playersGuess);
-            if(this.pastGuesses.length === 5){
-                return "You Lose.";
+            if(this.pastGuesses.length === 4){
+                ret = "You Lose.";
             }
-            else if(diff < 10){
-                return "You\'re burning up!";
+            else if(diff < 100){
+                this.pastGuesses.push(this.playersGuess);
+
+                ret = "You\'re ice cold!";
+                if(diff < 50)ret = "You\'re a bit chilly.";
+                if(diff < 25) ret =  "You\'re lukewarm.";
+                if(diff < 10) ret =  "You\'re burning up!";
             }
-            else if(diff >=10 && diff < 25){
-                return "You\'re lukewarm.";
-            }
-            else if(diff >=25 && diff < 50){
-                return "You\'re a bit chilly.";
-            }
-            return "You\'re ice cold!";
         }
+        return ret;
     }
     provideHint(){
         let hintArr = [];
@@ -91,24 +90,19 @@ const guessButton  = document.getElementById('Guess');
 const message = document.getElementById('message');
 
 function play(){
+    let count = 0;
     let game = newGame();
     pastGuessArray.innerHTML = 'Take a guess!';
     message.innerHTML = null;
-    console.log("Winning Game: ",game.winningNumber);
-    console.log("Past Guesses: ", game.pastGuesses);
-    guessButton.addEventListener('click', function(){
+
+    guessButton.addEventListener('click', function(){        
         const guess = document.querySelector('Input');
-        game.playersGuessSubmission(Number(guess.value));
-        console.log("Winning Game: ",game.winningNumber);
-        console.log("Past Guesses: ", game.pastGuesses);
-        pastGuessArray.innerHTML = game.pastGuesses.toString();
-        message.innerHTML = game.checkGuess();
+        message.innerHTML = game.playersGuessSubmission(Number(guess.value));
+        pastGuessArray.innerHTML = `Past Guesses: ${game.pastGuesses}`; 
     })
 
     hintButton.addEventListener('click', function(){
         message.innerHTML = `Hint: ${game.provideHint().toString()}`;
-        console.log("Winning Game: ",game.winningNumber);
-        console.log("Past Guesses: ", game.pastGuesses);
     })
 
     resetButton.addEventListener('click', function(){
@@ -116,9 +110,6 @@ function play(){
         game = newGame();
         pastGuessArray.innerHTML = 'Take a guess!';
         message.innerHTML = null;
-
-        console.log("Winning Game: ",game.winningNumber);
-        console.log("Past Guesses: ", game.pastGuesses);
     })
 }
 play();

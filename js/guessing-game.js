@@ -36,11 +36,12 @@ class Game{
         return this.playersGuess < this.winningNumber;
     }
     playersGuessSubmission(num){
+        console.log("submitted: ", num);
         if(num > 100 || num < 1 || typeof(num) !== 'number'){
             throw 'That is an invalid guess.';
         }
         this.playersGuess = num;
-        return this.checkGuess();
+        return this.checkGuess(num);
     }
     checkGuess(){
         if(this.playersGuess === this.winningNumber){
@@ -50,7 +51,7 @@ class Game{
             return "You have already guessed that number.";
         }
         else{
-            const diff = Math.abs(this.winningNumber - this.playersGuess);
+            let diff = this.difference();
             this.pastGuesses.push(this.playersGuess);
             if(this.pastGuesses.length === 5){
                 return "You Lose.";
@@ -87,21 +88,37 @@ const pastGuessArray = document.getElementById('arr');
 const hintButton = document.getElementById('Hint');
 const resetButton  = document.getElementById('Reset');
 const guessButton  = document.getElementById('Guess');
+const message = document.getElementById('message');
 
 function play(){
-    const game = newGame();
+    let game = newGame();
+    pastGuessArray.innerHTML = 'Take a guess!';
+    message.innerHTML = null;
+    console.log("Winning Game: ",game.winningNumber);
+    console.log("Past Guesses: ", game.pastGuesses);
     guessButton.addEventListener('click', function(){
         const guess = document.querySelector('Input');
-        alert(guess.value);
-        game.playersGuessSubmission(guess.value);
+        game.playersGuessSubmission(Number(guess.value));
+        console.log("Winning Game: ",game.winningNumber);
+        console.log("Past Guesses: ", game.pastGuesses);
+        pastGuessArray.innerHTML = game.pastGuesses.toString();
+        message.innerHTML = game.checkGuess();
     })
 
     hintButton.addEventListener('click', function(){
         alert(game.provideHint());
+        console.log("Winning Game: ",game.winningNumber);
+        console.log("Past Guesses: ", game.pastGuesses);
     })
 
     resetButton.addEventListener('click', function(){
-        alert('reset');
+        console.log(game.pastGuesses);
+        game = newGame();
+        pastGuessArray.innerHTML = 'Take a guess!';
+        message.innerHTML = null;
+
+        console.log("Winning Game: ",game.winningNumber);
+        console.log("Past Guesses: ", game.pastGuesses);
     })
 }
 play();

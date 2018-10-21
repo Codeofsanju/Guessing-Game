@@ -91,6 +91,7 @@ const message = document.getElementById('message');
 
 function play(){
     let game = newGame();
+    const hint = `Hint: ${game.provideHint().toString()}`;
     pastGuessArray.innerHTML = 'Take a guess!';
     message.innerHTML = null;
 
@@ -101,7 +102,7 @@ function play(){
     })
 
     hintButton.addEventListener('click', function(){
-        message.innerHTML = `Hint: ${game.provideHint().toString()}`;
+        message.innerHTML = hint;
     })
 
     resetButton.addEventListener('click', function(){

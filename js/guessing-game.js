@@ -46,7 +46,7 @@ class Game{
     checkGuess(){
         let ret = '';
         if(this.playersGuess === this.winningNumber){
-            ret =  "You Win!";
+            return  "You Win! Hit reset to play again.";
         }
         if(this.pastGuesses.includes(this.playersGuess)){
             ret =  "You have already guessed that number.";

@@ -106,7 +106,6 @@ function play(){
     })
 
     resetButton.addEventListener('click', function(){
-        console.log(game.pastGuesses);
         game = newGame();
         pastGuessArray.innerHTML = 'Take a guess!';
         message.innerHTML = null;

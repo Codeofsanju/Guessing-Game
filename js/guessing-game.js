@@ -90,7 +90,6 @@ const guessButton  = document.getElementById('Guess');
 const message = document.getElementById('message');
 
 function play(){
-    let count = 0;
     let game = newGame();
     pastGuessArray.innerHTML = 'Take a guess!';
     message.innerHTML = null;

@@ -106,7 +106,7 @@ function play(){
     })
 
     hintButton.addEventListener('click', function(){
-        alert(game.provideHint());
+        message.innerHTML = `Hint: ${game.provideHint().toString()}`;
         console.log("Winning Game: ",game.winningNumber);
         console.log("Past Guesses: ", game.pastGuesses);
     })

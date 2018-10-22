@@ -63,7 +63,7 @@ input{
     height: 4vw;
     width: 9vw;
     min-width: 50%;
-    font-family: 'Charmonman', cursive;    ;
+    font-family: 'Charmonman', cursive;    
     font-size:calc(15px + 1.20vw);
     margin-top: 34%;
     color: white;
@@ -137,7 +137,7 @@ img{
 
 .header{
     position: absolute;
-    font-family: 'Charmonman', cursive;
+    font-family: 'Pacifico', cursive;
     font-weight: bold;
     font-size: 15px;
     color: white;

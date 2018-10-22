@@ -36,7 +36,6 @@ class Game{
         return this.playersGuess < this.winningNumber;
     }
     playersGuessSubmission(num){
-        console.log("submitted: ", num);
         if(num > 100 || num < 1 || typeof(num) !== 'number'){
             throw 'That is an invalid guess.';
         }
@@ -91,10 +90,10 @@ const message = document.getElementById('message');
 
 function play(){
     let game = newGame();
-    const hint = `Hint: ${game.provideHint().toString()}`;
+    const hint = game.provideHint();
     pastGuessArray.innerHTML = 'Take a guess!';
     message.innerHTML = null;
-
+    
     guessButton.addEventListener('click', function(){        
         const guess = document.querySelector('Input');
         message.innerHTML = game.playersGuessSubmission(Number(guess.value));
@@ -102,7 +101,9 @@ function play(){
     })
 
     hintButton.addEventListener('click', function(){
-        message.innerHTML = hint;
+        let arr = hint.map(n => n.toString(2));
+        message.innerHTML = `Binary Hint: ${arr} `;
+        console.log(arr);
     })
 
     resetButton.addEventListener('click', function(){

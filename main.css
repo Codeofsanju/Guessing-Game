@@ -87,7 +87,7 @@ input:hover{
 
 .button, .button1, .button2{
     transition-duration: 0.4s;
-    background: radial-gradient(circle, #985e6d, #98878f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: radial-gradient(circle, #985e6d, #98878f); 
     border: transparent;
     min-width: 50px;
     min-height: 50px;

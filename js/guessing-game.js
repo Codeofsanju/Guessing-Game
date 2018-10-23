@@ -100,8 +100,7 @@ function play(){
     })
 
     hintButton.addEventListener('click', function(){
-        let arr = hint.map(n => n.toString(2));
-        message.innerHTML = `Binary Hint: ${arr} `;
+        message.innerHTML = `Hint: ${hint} `;
         console.log(arr);
     })
 
